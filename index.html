@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="renderer" content="webkit">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>免费福利电影网 - 海量好片免费看</title>
+<meta name="keywords" content="免费福利电影网, mianfeifulidianyingwang, 免费电影, 福利影视, 在线观影">
+<meta name="description" content="免费福利电影网（mianfeifulidianyingwang）提供海量好片免费在线观看，精选高分影片与每日福利片单，零门槛畅享光影。">
+<meta name="author" content="免费福利电影网">
+<meta property="og:type" content="website">
+<meta property="og:title" content="免费福利电影网 - 海量好片免费看">
+<meta property="og:description" content="提供海量好片免费在线观看，精选高分影片与每日福利片单，零门槛畅享光影。">
+<meta property="og:url" content="https://mianfeifulidianyingwang-wap.github.io">
+<meta property="og:site_name" content="免费福利电影网">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="免费福利电影网 - 海量好片免费看">
+<meta name="twitter:description" content="提供海量好片免费在线观看，精选高分影片与每日福利片单，零门槛畅享光影。">
+<link rel="canonical" href="https://mianfeifulidianyingwang-wap.github.io">
+<link rel="alternate" hreflang="zh-CN" href="https://mianfeifulidianyingwang-wap.github.io">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;font-size:16px;line-height:1.85;color:#1f2937;background:#f2fbf6;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+ul{list-style:none}
+:root{--green:#12b886;--dark:#087f5b;--lime:#a9e34b;--paper:#ffffff;--ink:#e9faf3;--gold:#ffd43b;--shadow:0 10px 30px rgba(18,184,134,.15);}
+
+/* 漫画网点 + 绿叶背景 */
+body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;background-image:radial-gradient(rgba(18,184,134,.13) 1px,transparent 1px);background-size:22px 22px}
+body::after{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;background:radial-gradient(circle at 88% 8%,rgba(18,184,134,.16),transparent 40%),radial-gradient(circle at 5% 90%,rgba(169,227,75,.18),transparent 45%)}
+main,header,footer{position:relative;z-index:2}
+
+/* Header */
+header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.9);backdrop-filter:blur(10px);border-bottom:3px solid var(--green)}
+.hin{display:flex;align-items:center;justify-content:space-between;height:74px}
+.logo{display:flex;align-items:center;gap:12px;font-weight:900;font-size:18px;color:#087f5b;letter-spacing:-.3px}
+.badge{width:46px;height:46px;border-radius:14px;background:linear-gradient(135deg,var(--green),var(--dark));display:grid;place-items:center;font-size:20px;font-weight:900;color:#fff;transform:rotate(-6deg);box-shadow:var(--shadow);flex-shrink:0}
+.badge span{transform:rotate(6deg);display:block}
+.logo small{display:block;font-size:8px;color:#12b886;letter-spacing:1.2px;font-weight:700;text-transform:uppercase}
+.nav{display:none;gap:6px}
+.nav a{padding:9px 16px;font-size:13.5px;font-weight:800;color:#087f5b;border-radius:12px;transition:.25s}
+.nav a:hover{background:var(--green);color:#fff}
+@media(min-width:920px){.nav{display:flex}}
+.ham{width:46px;height:46px;border:2px solid var(--green);border-radius:14px;font-size:22px;color:#087f5b}
+@media(min-width:920px){.ham{display:none}}
+.mnav{display:none;flex-direction:column;padding:12px 18px 22px;gap:8px;border-top:2px solid var(--ink)}
+.mnav.open{display:flex}
+.mnav a{padding:16px;font-weight:900;background:var(--ink);color:#087f5b;border-radius:14px;text-align:center}
+
+/* Hero */
+.hero{padding:56px 0 72px;position:relative;overflow:hidden}
+.hwrap{display:grid;grid-template-columns:1fr;gap:44px;align-items:center}
+@media(min-width:920px){.hwrap{grid-template-columns:1.1fr .9fr;gap:56px}}
+.sticker{display:inline-block;background:var(--gold);color:#5c4400;padding:6px 16px;border-radius:999px;font-size:12px;font-weight:900;transform:rotate(-3deg);box-shadow:0 6px 16px rgba(255,212,59,.5)}
+h1{font-size:54px;font-weight:900;line-height:1.05;letter-spacing:-2px;margin-top:16px;color:#087f5b}
+@media(min-width:768px){h1{font-size:86px;letter-spacing:-3.5px}}
+h1 .f{color:var(--green);position:relative}
+h1 .f::after{content:"福利";position:absolute;left:0;top:0;color:transparent;-webkit-text-stroke:1.5px var(--lime);z-index:-1;transform:translate(4px,4px)}
+.hsub{font-size:16px;color:#4a5568;max-width:470px;margin-top:22px}
+.h-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:16px 34px;font-size:14.5px;font-weight:900;border-radius:16px;transition:.3s}
+.btn-fill{background:var(--green);color:#fff;box-shadow:var(--shadow)}
+.btn-fill:hover{background:var(--dark)}
+.btn-out{background:#fff;color:#087f5b;border:2px solid var(--green)}
+.btn-out:hover{background:var(--ink)}
+/* 福利卡堆叠 */
+.fc{position:relative;height:430px}
+@media(max-width:620px){.fc{height:390px}}
+.card{position:absolute;background:#fff;border:2.5px solid #087f5b;border-radius:20px;padding:20px;box-shadow:var(--shadow);transform-origin:center}
+.card::before{content:"";position:absolute;top:-12px;right:-12px;width:44px;height:44px;border-radius:50%;background:var(--gold);border:2.5px solid #087f5b;display:grid;place-items:center;font-size:15px;font-weight:900;color:#5c4400}
+.c1{width:250px;height:250px;left:0;top:30px;z-index:3;transform:rotate(-5deg);background:linear-gradient(160deg,#fff,#e9faf3)}
+.c1::before{content:"免"}
+.c2{width:190px;height:190px;right:0;top:0;z-index:2;transform:rotate(6deg);background:linear-gradient(160deg,#fff,#d3f9d8)}
+.c2::before{content:"费"}
+.c3{width:160px;height:160px;right:50px;bottom:30px;z-index:4;transform:rotate(-4deg);background:linear-gradient(160deg,#fff,#fff9db)}
+.c3::before{content:"看"}
+.card b{font-size:18px;color:#087f5b;display:block;margin-top:8px}
+.card p{font-size:12.5px;color:#4a5568;margin-top:6px}
+
+/* 通用 */
+section{padding:56px 0;position:relative}
+@media(min-width:768px){section{padding:96px 0}}
+.container{width:100%;max-width:1180px;margin:0 auto;padding:0 18px}
+@media(min-width:768px){.container{padding:0 30px}}
+.head{margin-bottom:48px;display:grid;grid-template-columns:1fr;gap:10px}
+@media(min-width:760px){.head{grid-template-columns:auto 1fr;align-items:end;gap:32px}}
+.h-cn{font-size:11px;letter-spacing:2px;color:#12b886;font-weight:900;text-transform:uppercase;border-bottom:3px solid var(--gold);padding-bottom:6px;justify-self:start}
+.head h2{font-size:32px;font-weight:900;line-height:1.2;letter-spacing:-1px;color:#087f5b}
+@media(min-width:768px){.head h2{font-size:50px;letter-spacing:-2px}}
+.head h2 em{font-style:normal;color:var(--gold);-webkit-text-stroke:.6px #b8860b}
+.head p{color:#4a5568;max-width:600px;margin-top:10px;grid-column:1/-1}
+
+/* 栏目一：免费专区（倾斜福利卡） */
+.free{display:grid;grid-template-columns:1fr;gap:20px}
+@media(min-width:600px){.free{grid-template-columns:1fr 1fr}}
+@media(min-width:900px){.free{grid-template-columns:repeat(4,1fr)}}
+.fbox{background:#fff;border:2.5px solid #087f5b;border-radius:22px;padding:26px 20px;text-align:center;transition:.3s;position:relative}
+.fbox:hover{transform:translateY(-8px) rotate(-2deg);box-shadow:var(--shadow)}
+.fbox .tag{position:absolute;top:-14px;left:50%;transform:translateX(-50%) rotate(-3deg);background:var(--gold);color:#5c4400;font-size:11px;font-weight:900;padding:4px 14px;border-radius:999px;border:2px solid #087f5b;white-space:nowrap}
+.fbox .ic{font-size:38px;margin-bottom:10px}
+.fbox h3{font-size:19px;font-weight:900;color:#087f5b}
+.fbox p{font-size:13px;color:#4a5568;margin-top:8px}
+
+/* 栏目二：类型馆（圆角胶囊标签云） */
+.types{display:flex;flex-wrap:wrap;gap:12px}
+.type{background:#fff;border:2px solid #b2f2dd;border-radius:999px;padding:14px 24px;font-weight:900;color:#087f5b;font-size:15px;transition:.25s;display:flex;align-items:center;gap:8px}
+.type:hover{background:var(--green);color:#fff;border-color:var(--green);transform:scale(1.06)}
+.type span{font-size:12px;background:#e9faf3;color:#12b886;border-radius:999px;padding:2px 10px;font-weight:800}
+.type:hover span{background:#fff;color:var(--green)}
+
+/* 栏目三：福利片单（横向卡片带） */
+.reels{display:flex;gap:18px;overflow-x:auto;padding:8px 4px 24px;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch}
+.reels::-webkit-scrollbar{height:10px}
+.reels::-webkit-scrollbar-track{background:#e9faf3;border-radius:999px}
+.reels::-webkit-scrollbar-thumb{background:var(--green);border-radius:999px}
+.reel{flex:0 0 240px;scroll-snap-align:start;background:#fff;border:2.5px solid #087f5b;border-radius:20px;overflow:hidden;transition:.3s}
+@media(max-width:500px){.reel{flex-basis:190px}}
+.reel:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.rthumb{height:150px;background:linear-gradient(135deg,var(--green),var(--dark));display:grid;place-items:center;font-size:44px;color:#fff;position:relative}
+.rthumb small{position:absolute;top:10px;left:10px;background:var(--gold);color:#5c4400;font-size:10px;font-weight:900;padding:3px 9px;border-radius:999px}
+.rinfo{padding:14px}
+.rinfo h3{font-size:16px;font-weight:900;color:#087f5b}
+.rinfo p{font-size:12px;color:#4a5568;margin-top:5px}
+
+/* 栏目四：观影福利（四步竖条） */
+.steps{max-width:900px;margin:0 auto}
+.step{display:grid;grid-template-columns:1fr;gap:10px;background:#fff;border:2.5px solid #087f5b;border-left:8px solid var(--lime);border-radius:18px;padding:20px;margin-bottom:14px;transition:.25s;align-items:center}
+@media(min-width:640px){.step{grid-template-columns:60px 1fr auto}}
+.step:hover{border-left-color:var(--gold)}
+.step .no{width:48px;height:48px;border-radius:14px;background:var(--ink);display:grid;place-items:center;font-size:20px;font-weight:900;color:#087f5b;border:2px solid var(--green)}
+.step h3{font-size:17px;font-weight:900;color:#087f5b}
+.step p{font-size:13.5px;color:#4a5568;margin-top:4px}
+.step .go{font-size:13px;font-weight:900;color:#fff;background:var(--green);padding:8px 18px;border-radius:999px;justify-self:end}
+
+/* 栏目五：关于 + 数据 */
+.about{background:linear-gradient(135deg,#087f5b,#12b886);border-radius:36px;margin:0 14px;color:#fff}
+@media(min-width:768px){.about{margin:0 26px}}
+.abox{display:grid;grid-template-columns:1fr;gap:34px;align-items:center}
+@media(min-width:820px){.abox{grid-template-columns:1.1fr .9fr}}
+.about h2{font-size:34px;font-weight:900;line-height:1.25;letter-spacing:-1px}
+@media(min-width:768px){.about h2{font-size:50px}}
+.about h2 em{font-style:normal;color:#fff9db}
+.about p{color:#d3f9d8;margin-top:14px;font-size:15px}
+.abstats{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.st{background:rgba(255,255,255,.14);border:2px solid rgba(255,255,255,.3);border-radius:22px;padding:24px 12px;text-align:center;backdrop-filter:blur(4px)}
+.st b{display:block;font-size:40px;font-weight:900;color:#fff9db}
+.st span{font-size:11px;display:block;margin-top:4px;letter-spacing:1px;text-transform:uppercase;color:#e9faf3}
+
+/* 栏目六：FAQ（手风琴 + 绿叶图标） */
+.faqs{max-width:900px;margin:0 auto}
+.faq{background:#fff;border:2.5px solid #087f5b;border-radius:18px;margin-bottom:12px;overflow:hidden}
+.fq{padding:18px 22px;font-size:15.5px;font-weight:900;color:#087f5b;display:flex;justify-content:space-between;align-items:center;gap:14px}
+.fq .lv{width:32px;height:32px;border-radius:12px;background:var(--ink);display:grid;place-items:center;font-size:15px;flex-shrink:0;transition:.3s}
+.faq.open .lv{background:var(--green);transform:rotate(45deg)}
+.fa{padding:0 22px;max-height:0;overflow:hidden;transition:.4s;font-size:14px;color:#4a5568}
+.faq.open .fa{max-height:280px;padding:0 22px 18px}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaolu.js"></script>
+
+<!-- Header -->
+<header>
+  <div class="container hin">
+    <a class="logo" href="#top"><span class="badge"><span>免</span></span><span>免费福利电影网<small>MIANFEIFULIDIANYINGWANG-WAP.GITHUB.IO</small></span></a>
+    <nav class="nav" aria-label="主导航">
+      <a href="#free">免费专区</a><a href="#types">类型馆</a><a href="#reels">福利片单</a><a href="#steps">观影福利</a><a href="#about">关于我们</a><a href="#faq">常见问题</a>
+    </nav>
+    <button class="ham" id="hamBtn" aria-label="菜单">≡</button>
+  </div>
+  <nav class="mnav" id="mnav" aria-label="移动端导航">
+    <a href="#free">免费专区</a><a href="#types">类型馆</a><a href="#reels">福利片单</a><a href="#steps">观影福利</a><a href="#about">关于我们</a><a href="#faq">常见问题</a>
+  </nav>
+</header>
+
+<main>
+<!-- Hero -->
+<section class="hero" id="top">
+  <div class="container">
+    <div class="hwrap">
+      <div>
+        <span class="sticker">🎁 每日更新福利片单</span>
+        <h1>免费<br>看<em class="f">福利</em>电影</h1>
+        <p class="hsub">免费福利电影网（mianfeifulidianyingwang）提供海量好片免费在线观看，精选高分影片与每日福利片单，零门槛畅享光影。</p>
+        <div class="h-cta">
+          <a class="btn btn-fill" href="#free">立即免费看 →</a>
+          <a class="btn btn-out" href="#types">浏览类型</a>
+        </div>
+      </div>
+      <div class="fc">
+        <div class="card c1"><b>免费大片</b><p>院线级画质，随时随地畅看。</p></div>
+        <div class="card c2"><b>福利片单</b><p>每日精选，不花钱也能看好片。</p></div>
+        <div class="card c3"><b>零门槛</b><p>打开即看，无需复杂操作。</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目一：免费专区 -->
+<section id="free">
+  <div class="container">
+    <div class="head"><div class="h-cn">01 / FREE ZONE</div><h2>免费<em>专区</em></h2><p>免费福利电影网，六大免费福利，全站无门槛畅享。</p></div>
+    <div class="free">
+      <div class="fbox"><span class="tag">HOT</span><div class="ic">🎬</div><h3>免费大片</h3><p>精选高分大片，免费在线看。</p></div>
+      <div class="fbox"><span class="tag">NEW</span><div class="ic">📺</div><h3>福利剧集</h3><p>热门剧集同步更新。</p></div>
+      <div class="fbox"><span class="tag">4K</span><div class="ic">✨</div><h3>高清画质</h3><p>超清流畅播放体验。</p></div>
+      <div class="fbox"><span class="tag">FREE</span><div class="ic">🎁</div><h3>每日福利</h3><p>每天一份精选福利片单。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目二：类型馆 -->
+<section id="types">
+  <div class="container">
+    <div class="head"><div class="h-cn">02 / GENRES</div><h2>类型<em>馆</em></h2><p>免费福利电影网覆盖主流类型，总有你想看的那个类别。</p></div>
+    <div class="types">
+      <div class="type">🎭 剧情 <span>420</span></div>
+      <div class="type">😂 喜剧 <span>356</span></div>
+      <div class="type">💕 爱情 <span>288</span></div>
+      <div class="type">🔮 悬疑 <span>210</span></div>
+      <div class="type">🚀 科幻 <span>176</span></div>
+      <div class="type">😱 恐怖 <span>142</span></div>
+      <div class="type">🎨 文艺 <span>160</span></div>
+      <div class="type">🌍 纪录 <span>98</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目三：福利片单 -->
+<section id="reels">
+  <div class="container">
+    <div class="head"><div class="h-cn">03 / WELFARE LIST</div><h2>福利<em>片单</em></h2><p>左右滑动浏览，每日精选免费好片。</p></div>
+    <div class="reels">
+      <div class="reel"><div class="rthumb">🎬<small>FREE</small></div><div class="rinfo"><h3>星际穿越</h3><p>硬科幻经典 · 免费观看</p></div></div>
+      <div class="reel"><div class="rthumb">🎭<small>福利</small></div><div class="rinfo"><h3>肖申克的救赎</h3><p>影史高分 · 免费观看</p></div></div>
+      <div class="reel"><div class="rthumb">😂<small>FREE</small></div><div class="rinfo"><h3>你好，李焕英</h3><p>温情喜剧 · 免费观看</p></div></div>
+      <div class="reel"><div class="rthumb">💕<small>福利</small></div><div class="rinfo"><h3>爱在黎明破晓前</h3><p>浪漫爱情 · 免费观看</p></div></div>
+      <div class="reel"><div class="rthumb">🔮<small>FREE</small></div><div class="rinfo"><h3>看不见的客人</h3><p>反转悬疑 · 免费观看</p></div></div>
+      <div class="reel"><div class="rthumb">🌿<small>福利</small></div><div class="rinfo"><h3>小森林</h3><p>治愈文艺 · 免费观看</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目四：观影福利 -->
+<section id="steps">
+  <div class="container">
+    <div class="head"><div class="h-cn">04 / HOW TO WATCH</div><h2>观影<em>福利</em></h2><p>三步上手，零门槛免费畅享好片。</p></div>
+    <div class="steps">
+      <div class="step"><div class="no">1</div><div><h3>打开网站</h3><p>访问免费福利电影网，无需注册登录。</p></div><div class="go">立即前往 →</div></div>
+      <div class="step"><div class="no">2</div><div><h3>挑选影片</h3><p>按类型或福利片单快速找到想看的。</p></div><div class="go">浏览类型 →</div></div>
+      <div class="step"><div class="no">3</div><div><h3>免费播放</h3><p>点开即播，超清流畅，全程免费。</p></div><div class="go">开始观看 →</div></div>
+      <div class="step"><div class="no">4</div><div><h3>每日福利</h3><p>每日更新精选片单，天天有惊喜。</p></div><div class="go">查看片单 →</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目五：关于 + 数据 -->
+<section id="about">
+  <div class="container">
+    <div class="about">
+      <div class="abox">
+        <div>
+          <h2>关于<em>免费福利电影网</em></h2>
+          <p>免费福利电影网（mianfeifulidianyingwang）提供海量好片免费在线观看，精选高分影片与每日福利片单，零门槛畅享光影。</p>
+          <p style="margin-top:12px">网址：https://mianfeifulidianyingwang-wap.github.io —— 免费看好片，天天有福利。</p>
+        </div>
+        <div class="abstats">
+          <div class="st"><b>2000+</b><span>免费影片</span></div>
+          <div class="st"><b>8</b><span>类型分区</span></div>
+          <div class="st"><b>4K</b><span>高清画质</span></div>
+          <div class="st"><b>0</b><span>观看门槛</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目六：FAQ -->
+<section id="faq">
+  <div class="container">
+    <div class="head"><div class="h-cn">06 / FAQ</div><h2>常见<em>问题</em></h2><p>关于免费福利电影网，你可能想了解的都在这里。</p></div>
+    <div class="faqs">
+      <div class="faq"><div class="fq"><span>真的全部免费吗？</span><span class="lv">❓</span></div><div class="fa">是的，免费福利电影网所有影片均免费在线观看，无隐藏收费。</div></div>
+      <div class="faq"><div class="fq"><span>需要注册登录吗？</span><span class="lv">❓</span></div><div class="fa">不需要，打开网站即可直接观看，零门槛零操作。</div></div>
+      <div class="faq"><div class="fq"><span>画质怎么样？</span><span class="lv">❓</span></div><div class="fa">支持超清播放，画面清晰流畅，带来优质观影体验。</div></div>
+      <div class="faq"><div class="fq"><span>福利片单多久更新？</span><span class="lv">❓</span></div><div class="fa">每日更新，持续为你推荐最新的免费好片。</div></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="foot">
+      <div><div class="logo foot-l"><span class="badge"><span>免</span></span><span>免费福利电影网<small>MIANFEIFULIDIANYINGWANG-WAP.GITHUB.IO</small></span></div><p class="fabout">免费福利电影网（mianfeifulidianyingwang）提供海量好片免费在线观看。网址：https://mianfeifulidianyingwang-wap.github.io</p></div>
+      <div><h4>栏目导航</h4><a href="#free">免费专区</a><a href="#types">类型馆</a><a href="#reels">福利片单</a><a href="#steps">观影福利</a></div>
+      <div><h4>影片类型</h4><a href="#types">剧情</a><a href="#types">喜剧</a><a href="#types">爱情</a><a href="#types">悬疑</a></div>
+      <div><h4>友情链接</h4><a href="#">免费福利电影网</a><a href="#">免费影视大全</a><a href="#">在线观影指南</a><a href="#">高清电影推荐</a></div>
+    </div>
+    <div class="fbot"><p>© 2026 免费福利电影网 mianfeifulidianyingwang. 免费看好片，天天有福利。</p><div class="fl"><a href="#">免责声明</a><a href="#">隐私政策</a><a href="#">联系我们</a></div></div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var b=document.getElementById('hamBtn'),n=document.getElementById('mnav');
+  b.addEventListener('click',function(){n.classList.toggle('open');});
+  n.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){n.classList.remove('open');});});
+  document.querySelectorAll('.faq').forEach(function(f){
+    f.querySelector('.fq').addEventListener('click',function(){f.classList.toggle('open');});
+  });
+})();
+</script>
+</body>
+</html>
